@@ -7,7 +7,7 @@ if number < 0:
 if last_digit > 5:
     output = "greater than 5"
 elif last_digit == 0:
-    output "0"
+    output = "0"
 else:
     output = "less than 6 and not o"
 print(f"Last digit 0f {number} is {last_digit} and is {output}")
