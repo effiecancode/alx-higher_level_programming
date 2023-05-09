@@ -10,4 +10,4 @@ elif last_digit == 0:
     output = "0"
 else:
     output = "less than 6 and not o"
-print("Last digit 0f {} is {} and is ".format(number, last_number), output)
+print("Last digit 0f {} is {} and is ".format(number, last_digit), output)
