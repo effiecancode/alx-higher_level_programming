@@ -9,5 +9,5 @@ def remove_char_at(str, n):
             index += 1
             continue
         new_str += str[index]
-        index +=1
+        index += 1
     return new_str
