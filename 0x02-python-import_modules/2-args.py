@@ -1,17 +1,13 @@
-#!/usr/bin/python
-from sys import argv
-def argoutput():
-    num_args = len(argv)
-    if num_args < 2:
-        print("{} argument.".format(num_args - 1))
-    else:
-        if num_args == 2:
-            print("{} argument:".format(num_args - 1))
-        else:
-            print("{} arguments:".format(num_args -1))   
-        for n, arg in enumerate (argv[1:], start=1):
-            print("{}: {}".format(n, arg))
-
-
+#!/usr/bin/python3
 if __name__ == "__main__":
-    argoutput()
+    from sys import argv
+argc = len(argv)
+if argc < 2:
+    print("{} arguments.".format(argc - 1))
+else:
+    if argc == 2:
+        print("{} argument:".format(argc - 1))
+    else:
+        print("{} arguments:".format(argc - 1))
+    for n in range(1, argc):
+        print("{}: {}".format(n, argv[n]))
