@@ -3,7 +3,6 @@ import hidden_4
 
 
 def print_all():
-
     file = dir(hidden_4)
     length = len(file)
     for i in range(0, length):
