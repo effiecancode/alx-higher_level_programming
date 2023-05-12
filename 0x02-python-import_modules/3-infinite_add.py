@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from sys import argv
+import sys
 
 
-def args_sum():
+def add_args():
     n = len(sys.argv)
     total = 0
     for i in range(1, n):
@@ -11,4 +11,4 @@ def args_sum():
 
 
 if __name__ == "__main__":
-    args_sum
+    add_args()
