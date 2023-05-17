@@ -7,4 +7,3 @@ def square_matrix_simple(matrix=[]):
             new_matrix[x][y] = matrix[x][y] ** 2
 
     print(new_matrix)
-    print(matrix)
