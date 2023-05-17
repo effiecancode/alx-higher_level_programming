@@ -6,4 +6,5 @@ def square_matrix_simple(matrix=[]):
         for y in range(len(matrix)):
             new_matrix[x][y] = matrix[x][y] ** 2
 
-    return new_matrix
+    print(new_matrix)
+    print(matrix)
