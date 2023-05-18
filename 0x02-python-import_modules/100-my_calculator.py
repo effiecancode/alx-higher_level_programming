@@ -4,13 +4,15 @@ from calculator_1 import add, sub, mul, div
 
 
 def calculator():
-    argc = len(argv) - 1
+    argc = len(sys.argv) - 1
     if argc != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
-    operator = argv[2]
-    a = int(argv[1])
-    b = int(argv[3])
+        sys.exit(1)
+    operator = sys.argv[2]
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
+    result = 0
+
     if operator == "+":
         print("{} + {} = {}".format(a, b, add(a, b)))
     elif operator == "-":
@@ -21,7 +23,7 @@ def calculator():
         print("{} / {} = {}".format(a, b, div(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        exit(1)
+        sys.exit(1)
 
 if __name__ == "__main__"
     calculator()
