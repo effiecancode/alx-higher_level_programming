@@ -3,7 +3,7 @@ def safe_print_interger(value):
 
     try:
         print("{:d}".format(value))
-    except (ValueError, TypeError):
+    except:
         return False
     else:
         return True
