@@ -8,7 +8,8 @@ def safe_print_list_integers(my_list=[], x=0):
             index = next(iterator)
             print("{:d}".format(my_list[index]), end="")
             count += 1
-        except (ValueError, TypeError, StopIteration):
+        except (ValueError, TypeError, StopIteration) as err
+            print("Exception:", repr(err)):
             continue
 
     print()
