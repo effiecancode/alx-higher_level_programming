@@ -83,7 +83,7 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """
-        Write the CSV serialization of a list of objects to a file.
+        Write the CSV serialization of a list of objects to a file
         """
         filename = cls.__name__ + ".csv"
         with open(filename, "w", newline="") as csvfile:
