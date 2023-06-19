@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-import json
-import csv
 
 """The class Base module"""
+
+import json
+import csv
 
 
 class Base:
