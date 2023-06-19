@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" The class rectangle module """
+""" The class rectangle module inheritance from base"""
 
 from models.base import Base
 
@@ -8,7 +8,7 @@ from models.base import Base
 class Rectangle(Base):
     """ Defines he class rectangle """
 
-    def __init__(self, width, height, x=0, y=0, id=None): 
+    def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize the rectangle"""
 
         super().__init__(id)
