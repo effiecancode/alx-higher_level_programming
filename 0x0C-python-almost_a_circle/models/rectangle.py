@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """ The class rectangle module """
-from mymodule import Base
+from mymodules import Base
+
 
 class Rectangle(Base):
     """ Defines he class rectangle """
@@ -147,4 +148,4 @@ class Rectangle(Base):
         """
         return {'x': getattr(self, "x"), 'y': getattr(self, "y"),
                 'id': getattr(self, "id"), 'height': getattr(self, "height"),
-                'width': getattr(self, "width")}               
+                'width': getattr(self, "width")}
