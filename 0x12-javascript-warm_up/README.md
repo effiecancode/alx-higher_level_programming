@@ -1,6 +1,6 @@
 Hello Javascript 🤩
 
-LEARRNING OBJECTIVES:
+LEARNING OBJECTIVES:
 
     Why JavaScript programming is amazing
     How to run a JavaScript script
