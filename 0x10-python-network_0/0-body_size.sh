@@ -4,5 +4,4 @@
 # curl -s "$1" | wc -c
 
 url=$1
-content_Length=$(curl -s "$url" | wc -c)
-
+curl -s "$url" | wc -c
