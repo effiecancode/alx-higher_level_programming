@@ -9,7 +9,7 @@ from urllib import request
 if __name__ == "__main__":
     url = argv[1]
 
-    req = request.Request(url)
-    with request.urlopen(req) as response:
+    requests = request.Request(url)
+    with request.urlopen(requests) as response:
         header = "X-Request-Id"
         print(dict(response.headers).get(header))
