@@ -3,14 +3,14 @@
 displays the body of the response (decoded in utf-8).
 """
 from sys import argv
-from urllib import request, error
+from urllib import request, parse
 
 if __name__ == "__main__":
 
-    try:
-        url = argv[1]
-        with request.urlopen(url) as response:
-            print(response.read().decode('UTF-8'))
+    url = argv[1]
+    emailvar = {'email': argv[2]}
 
-    except error.HTTPError as e:
-        print('error code:', e.code)
+    data = parse.urlencode(emailvar).encode('utf-8')
+    requests = request.Request(argv[1], data)
+    with request.urlopen(requests) as response:
+        print(response.read().decode('UTF-8'))
