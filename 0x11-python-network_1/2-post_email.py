@@ -6,8 +6,9 @@ from sys import argv
 from urllib import request, error
 
 if __name__ == "__main__":
-    url = argv[1]
+
     try:
+        url = argv[1]
         with request.urlopen(url) as response:
             print(response.read().decode('UTF-8'))
 
