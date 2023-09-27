@@ -11,7 +11,7 @@ request.get(url + id, function (error, response, body) {
   const data = JSON.parse(body);
   const dd = data.characters;
   for (const i of dd) {
-    req.get(i, function (error, response, body1) {
+    request.get(i, function (error, response, body1) {
       if (error) {
         console.log(error);
       }
