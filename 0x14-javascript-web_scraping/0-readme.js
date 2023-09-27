@@ -1,14 +1,10 @@
 #!/usr/bin/node
-const fs = require('fs').promises;
+const fs = require('fs');
 
-async function readdata (filepath) {
-  try {
-    const data = await fs.readFile(filepath, 'utf8');
-    console.log(`File contents are ; ${data}`);
-  } catch (error) {
-    console.error(`Attempt to readfile ${filepath} unsuccessful: ${error.message}`);
+fs.readFile(process.argv[2], 'utf-8', (error, data) => {
+  if (error) {
+    console.error(`${error.message}`);
+    return;
   }
-}
-
-// const filepath = 'path/to/my/file.txt';
-// readdata(filepath);
+  console.log(data);
+});
